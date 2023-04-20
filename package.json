@@ -2,10 +2,13 @@
   "name": "contact-keeper",
   "version": "1.0.0",
   "description": "Contact manager app",
-  "main": "sever.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node sever.js",
-    "sever": "nodemon sever.js"
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "clientinstall": "npm install --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
   "author": "",
